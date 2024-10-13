@@ -1,0 +1,44 @@
+{
+	"Comment": "Update A record to point to GitHub Pages and remove MX record",
+	"Changes": [
+		{
+			"Action": "DELETE",
+			"ResourceRecordSet": {
+				"Name": "judgedice.com.",
+				"Type": "A",
+				"AliasTarget": {
+					"HostedZoneId": "Z3AQBSTGFYJSTF",
+					"DNSName": "s3-website-us-east-1.amazonaws.com.",
+					"EvaluateTargetHealth": false
+				}
+			}
+		},
+		{
+			"Action": "CREATE",
+			"ResourceRecordSet": {
+				"Name": "judgedice.com.",
+				"Type": "A",
+				"TTL": 3600,
+				"ResourceRecords": [
+					{ "Value": "185.199.108.153" },
+					{ "Value": "185.199.109.153" },
+					{ "Value": "185.199.110.153" },
+					{ "Value": "185.199.111.153" }
+				]
+			}
+		},
+		{
+			"Action": "DELETE",
+			"ResourceRecordSet": {
+				"Name": "judgedice.com.",
+				"Type": "MX",
+				"TTL": 300,
+				"ResourceRecords": [
+					{
+						"Value": "10 inbound-smtp.us-east-1.amazonaws.com"
+					}
+				]
+			}
+		}
+	]
+}   

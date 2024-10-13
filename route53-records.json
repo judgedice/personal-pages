@@ -1,0 +1,92 @@
+{
+    "ResourceRecordSets": [
+        {
+            "Name": "judgedice.com.",
+            "Type": "A",
+            "TTL": 3600,
+            "ResourceRecords": [
+                {
+                    "Value": "185.199.108.153"
+                },
+                {
+                    "Value": "185.199.109.153"
+                },
+                {
+                    "Value": "185.199.110.153"
+                },
+                {
+                    "Value": "185.199.111.153"
+                }
+            ]
+        },
+        {
+            "Name": "judgedice.com.",
+            "Type": "NS",
+            "TTL": 172800,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-935.awsdns-52.net"
+                },
+                {
+                    "Value": "ns-1599.awsdns-07.co.uk"
+                },
+                {
+                    "Value": "ns-283.awsdns-35.com"
+                },
+                {
+                    "Value": "ns-1444.awsdns-52.org"
+                }
+            ]
+        },
+        {
+            "Name": "judgedice.com.",
+            "Type": "SOA",
+            "TTL": 900,
+            "ResourceRecords": [
+                {
+                    "Value": "ns-609.awsdns-12.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+                }
+            ]
+        },
+        {
+            "Name": "_amazonses.judgedice.com.",
+            "Type": "TXT",
+            "TTL": 1800,
+            "ResourceRecords": [
+                {
+                    "Value": "\"EXExcq/dv3wQGO1mpAsnLPwIagmq0pXa8ARzTfYW6HQ=\""
+                }
+            ]
+        },
+        {
+            "Name": "_b1b7ac59c89658b22d1c5490a53963fa.judgedice.com.",
+            "Type": "CNAME",
+            "TTL": 300,
+            "ResourceRecords": [
+                {
+                    "Value": "_ce8e4785e9e519f3a7df14d7172abc87.bwzjrqdvsp.acm-validations.aws."
+                }
+            ]
+        },
+        {
+            "Name": "_github-pages-challenge-judgedice.judgedice.com.",
+            "Type": "TXT",
+            "TTL": 300,
+            "ResourceRecords": [
+                {
+                    "Value": "\"a0bf6e90c5021181a74ad6be037dc4\""
+                }
+            ]
+        },
+        {
+            "Name": "_c1c068b7e179e8d3c2248ce05d749c7a.www.judgedice.com.",
+            "Type": "CNAME",
+            "TTL": 300,
+            "ResourceRecords": [
+                {
+                    "Value": "_6aab2b0c923c00e93a0f00e44d0ae0d8.bwzjrqdvsp.acm-validations.aws."
+                }
+            ]
+        }
+    ]
+}

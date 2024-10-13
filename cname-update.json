@@ -1,0 +1,18 @@
+{
+    "Comment": "Add CNAME record for www.judgedice.com",
+    "Changes": [
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "www.judgedice.com.",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    {
+                        "Value": "judgedice.github.io"
+                    }
+                ]
+            }
+        }
+    ]
+}

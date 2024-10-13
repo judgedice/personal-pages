@@ -18,6 +18,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added drop shadow */
         }
         nav ul {
             list-style: none;
@@ -45,6 +46,14 @@
         .hero h1 {
             font-size: 3em;
             margin: 0;
+        }
+        .hero video {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            position: absolute; /* Position it behind other content */
+            top: 0;
+            left: 0;
+            z-index: -1; /* Send it to the back */
         }
         .profile-icon {
             width: 40px;

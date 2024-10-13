@@ -4,35 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Modern Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: 'PT Sans', sans-serif; /* Apply the PT Sans font to the body */
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 10px 20px;
+        }
+        .header-content {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: flex-start; /* Align items to the left */
+        }
+        .profile-icon {
+            width: 40px;
+            height: 40px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Added drop shadow */
+            background-color: #fff; /* Optional: background color for contrast */
+            color: #333; /* Text color */
+            font-weight: bold; /* Make the text bold */
+            border-radius: 50%; /* Keep it circular */
+            font-family: 'Roboto Slab', serif; /* Keep the profile icon text in Roboto Slab */
+            margin-right: 15px; /* Add a small margin to the right */
+        }
+        .profile-name {
+            color: white; /* Set text color to white */
+            font-size: 1.5em; /* Adjust font size as needed */
+            font-weight: bold; /* Make the text bold */
+            font-family: 'Roboto Slab', serif; /* Keep the profile name in Roboto Slab */
+        }
+        nav {
+            margin-left: auto; /* Push the navigation to the right */
         }
         nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
+            list-style: none; /* Remove default list styling */
+            display: flex; /* Display menu items in a row */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 15px; /* Space between menu items */
         }
         nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+            color: #fff; /* Menu text color */
+            text-decoration: none; /* Remove underline from links */
+            font-family: 'PT Sans', sans-serif; /* Apply PT Sans font to menu items */
         }
         .hero {
             position: relative; /* Ensure the video is positioned correctly */
@@ -44,13 +65,6 @@
             text-align: center;
             overflow: hidden; /* Hide overflow to keep the layout clean */
         }
-        .hero h1 {
-            font-size: 3em; /* Keep the existing font size */
-            margin: 0;
-            color: black; /* Change text color to black */
-            font-weight: bold; /* Make the text bolder */
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Optional: Add a subtle shadow for better visibility */
-        }
         .hero video {
             width: 100%;
             height: auto; /* Maintain aspect ratio */
@@ -59,92 +73,41 @@
             left: 0;
             z-index: -1; /* Send it to the back */
         }
-        .profile-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-        .profile-icon img {
-            width: 100%;
-            height: auto;
-        }
-        .parallax {
-            background-image: url('https://via.placeholder.com/1500x500');
-            height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .description-blocks {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .description {
-            width: 30%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .client-logos {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .client-logos img {
-            margin: 0 10px;
-            height: 50px; /* Adjust height as needed */
+        .hero h1 {
+            font-size: 3em; /* Keep the existing font size */
+            margin: 0;
+            color: black; /* Change text color to black */
+            font-weight: bold; /* Make the text bolder */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Optional: Add a subtle shadow for better visibility */
+            z-index: 1; /* Ensure the text is above the video */
+            font-family: 'Roboto Slab', serif; /* Set the font to Roboto Slab */
         }
     </style>
 </head>
 <body>
-
-<header>
-    <div class="profile-icon">
-        <img src="https://via.placeholder.com/40" alt="Profile Icon">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero">
-    <video autoplay muted loop playsinline>
-        <source src="https://cdn.dribbble.com/users/1735178/screenshots/14423165/media/5e4019eb2cbca6b268d905096fe5f3aa.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <h1>Delivering Joy since the turn of the Century.</h1>
-</section>
-
-<section class="description-blocks">
-    <div class="description">
-        <h2>Section 1</h2>
-        <p>Brief description about this section.</p>
-    </div>
-    <div class="description">
-        <h2>Section 2</h2>
-        <p>Brief description about this section.</p>
-    </div>
-    <div class="description">
-        <h2>Section 3</h2>
-        <p>Brief description about this section.</p>
-    </div>
-</section>
-
-<section class="client-logos">
-    <img src="https://via.placeholder.com/100x50" alt="Client Logo 1">
-    <img src="https://via.placeholder.com/100x50" alt="Client Logo 2">
-    <img src="https://via.placeholder.com/100x50" alt="Client Logo 3">
-    <img src="https://via.placeholder.com/100x50" alt="Client Logo 4">
-</section>
-
+    <header>
+        <div class="header-content">
+            <div class="profile-icon">
+                JD
+            </div>
+            <div class="profile-name">Judge S. DiCesaro</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Work Life</a></li>
+                    <li><a href="#about">Home Life</a></li>
+                    <li><a href="#services">The Exciting Stuff</a></li>
+                    <li><a href="#contact">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="https://cdn.dribbble.com/users/1735178/screenshots/14423165/media/5e4019eb2cbca6b268d905096fe5f3aa.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Delivering Joy since the turn of the Century.</h1>
+    </section>
+    
 </body>
 </html>
